@@ -1252,6 +1252,7 @@ _:-webkit-full-screen,
 }
 html {
   font-family: sans-serif;
+  scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -8779,7 +8780,6 @@ select {
 .site-header-mobi-panel.site-header-mobi-panel--show {
   visibility: visible;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8798,7 +8798,6 @@ select {
 .navbar > a > img {
   width: 35%;
 }
-
 .site-logo__btn {
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
@@ -8820,7 +8819,6 @@ select {
 .site-header-desktop .site-logo__btn {
   width: 300px;
   height: 170px;
-
   line-height: 85px;
 }
 @media (min-width: 100px) {
@@ -10160,7 +10158,6 @@ ul.card-listing {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
 .hero__buttons {
   position: absolute;
   top: 90%;
@@ -12189,4 +12186,59 @@ article .container h1 {
 }
 .veggie-opt {
   background-image: url(https://images.getbento.com/accounts/b44d944d9dc031f062f297b458ebb35c/media/images/78360VEGETARIAN_OPTION.png?w=1800&fit=max&auto=compress,format&h=1800);
+}
+
+.recipesIntro {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  margin: 0 2rem;
+}
+.recipeCard {
+  padding: 2rem;
+}
+.recipe > img {
+  width: 100%;
+}
+.recipe > ul > img {
+  width: 100%;
+}
+.recipeCard > img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .recipesIntro {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .recipeCard > img {
+    width: 70%;
+  }
+  .recipe > img {
+    width: 70%;
+  }
+  .recipe > ul > img {
+    width: 70%;
+    margin: 3rem 0;
+  }
+
+  .recipesContainer {
+    margin: 2rem auto;
+    max-width: 1280px;
+  }
+}
+
+.recipesContainer {
+  padding: 0 2rem;
+}
+.recipe {
+  margin-top: 6rem;
+}
+
+.recipe > h3 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.recipe > p {
+  line-height: 40px;
 }
