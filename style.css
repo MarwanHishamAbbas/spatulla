@@ -9040,7 +9040,7 @@ select {
 }
 .site-nav ul,
 .site-nav li {
-  display: flex;
+  display: block;
 }
 .site-nav a,
 .site-nav a:hover,
